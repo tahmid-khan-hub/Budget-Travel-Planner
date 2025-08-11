@@ -10,14 +10,13 @@ A simple Java Swing desktop application that helps users organize trips by manag
 
 ## Folder Structure  
 BudgetTravelPlanner/
-│
-├── Main.java
-├── MainFrame.java
-├── Destination.java
-├── Budget.java
-├── DestinationPanel.java
-├── BudgetPanel.java
-└── OverviewPanel.java
+- Main.java
+- MainFrame.java
+- Destination.java
+- Budget.java
+- DestinationPanel.java
+- BudgetPanel.java
+- OverviewPanel.java
 
 ## How to Run  
 1. Open terminal in the project folder  
