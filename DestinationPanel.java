@@ -1,6 +1,6 @@
-import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+import javax.swing.*;
 
 public class DestinationPanel extends JPanel {
     private ArrayList<Destination> destinations = new ArrayList<>();
@@ -35,6 +35,10 @@ public class DestinationPanel extends JPanel {
 
                 if (name.isEmpty() || date.isEmpty()) {
                     JOptionPane.showMessageDialog(this, "Please enter name and date.");
+                    return;
+                }
+                if (cost < 0) {
+                    JOptionPane.showMessageDialog(this, "Estimated cost cannot be negative.");
                     return;
                 }
 
