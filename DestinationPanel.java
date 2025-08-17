@@ -6,13 +6,16 @@ public class DestinationPanel extends JPanel {
     private ArrayList<Destination> destinations = new ArrayList<>();
 
     public DestinationPanel() {
-        setLayout(new BorderLayout());
+        setLayout(new BorderLayout(10, 10));
+        setBorder(BorderFactory.createTitledBorder("Add Destinations"));
 
-        JPanel form = new JPanel(new GridLayout(4, 2, 5, 5));
+        JPanel form = new JPanel(new GridLayout(4, 2, 10, 10));
         JTextField nameField = new JTextField();
         JTextField dateField = new JTextField();
         JTextField costField = new JTextField();
-        JButton addBtn = new JButton("Add Destination");
+
+        JButton addBtn = new JButton("➕ Add Destination");
+        styleButton(addBtn);
 
         form.add(new JLabel("Name:"));
         form.add(nameField);
@@ -56,5 +59,12 @@ public class DestinationPanel extends JPanel {
 
         add(form, BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);
+    }
+
+    private void styleButton(JButton btn) {
+        btn.setBackground(new Color(0, 120, 215));
+        btn.setForeground(Color.WHITE);
+        btn.setFocusPainted(false);
+        btn.setFont(new Font("Arial", Font.BOLD, 13));
     }
 }

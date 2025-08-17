@@ -5,13 +5,16 @@ public class BudgetPanel extends JPanel {
     public static Budget currentBudget;
 
     public BudgetPanel() {
-        setLayout(new GridLayout(5, 2, 5, 5));
+        setLayout(new GridLayout(5, 2, 10, 10));
+        setBorder(BorderFactory.createTitledBorder("Enter Budget"));
 
         JTextField transportField = new JTextField();
         JTextField accommodationField = new JTextField();
         JTextField foodField = new JTextField();
         JTextField activitiesField = new JTextField();
-        JButton saveBtn = new JButton("Save Budget");
+
+        JButton saveBtn = new JButton("💾 Save Budget");
+        styleButton(saveBtn);
 
         add(new JLabel("Transportation ($):"));
         add(transportField);
@@ -21,6 +24,8 @@ public class BudgetPanel extends JPanel {
         add(foodField);
         add(new JLabel("Activities ($):"));
         add(activitiesField);
+        JPanel btnPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        btnPanel.add(saveBtn);
         add(new JLabel());
         add(saveBtn);
 
@@ -42,5 +47,12 @@ public class BudgetPanel extends JPanel {
                 JOptionPane.showMessageDialog(this, "Please enter valid numbers.");
             }
         });
+    }
+
+    private void styleButton(JButton btn) {
+        btn.setBackground(new Color(0, 120, 215)); 
+        btn.setForeground(Color.WHITE);
+        btn.setFocusPainted(false);
+        btn.setFont(new Font("Arial", Font.BOLD, 13));
     }
 }
