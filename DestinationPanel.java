@@ -21,7 +21,7 @@ public class DestinationPanel extends JPanel {
         form.add(nameField);
         form.add(new JLabel("Date:"));
         form.add(dateField);
-        form.add(new JLabel("Estimated Cost ($):"));
+        form.add(new JLabel("Estimated Cost (৳):"));
         form.add(costField);
         form.add(new JLabel());
         form.add(addBtn);

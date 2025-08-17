@@ -12,8 +12,8 @@ public class OverviewPanel extends JPanel {
 
         JPanel grid = new JPanel(new GridLayout(1, 2, 20, 10));
 
-        totalEstimatedLabel = new JLabel("Total Estimated Cost: $0.00", SwingConstants.CENTER);
-        totalBudgetLabel = new JLabel("Total Actual Budget: $0.00", SwingConstants.CENTER);
+        totalEstimatedLabel = new JLabel("Total Estimated Cost: ৳ 0.00", SwingConstants.CENTER);
+        totalBudgetLabel = new JLabel("Total Actual Budget: ৳ 0.00", SwingConstants.CENTER);
 
         totalEstimatedLabel.setFont(new Font("Arial", Font.BOLD, 14));
         totalBudgetLabel.setFont(new Font("Arial", Font.BOLD, 14));

@@ -1,6 +1,5 @@
 import java.awt.*;
 import javax.swing.*;
-
 public class BudgetPanel extends JPanel {
     public static Budget currentBudget;
 
@@ -16,18 +15,19 @@ public class BudgetPanel extends JPanel {
         JButton saveBtn = new JButton("💾 Save Budget");
         styleButton(saveBtn);
 
-        add(new JLabel("Transportation ($):"));
+        add(new JLabel("Transportation (৳):"));
         add(transportField);
-        add(new JLabel("Accommodation ($):"));
+        add(new JLabel("Accommodation (৳):"));
         add(accommodationField);
-        add(new JLabel("Food ($):"));
+        add(new JLabel("Food (৳):"));
         add(foodField);
-        add(new JLabel("Activities ($):"));
+        add(new JLabel("Activities (৳):"));
         add(activitiesField);
         JPanel btnPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         btnPanel.add(saveBtn);
         add(new JLabel());
         add(saveBtn);
+        
 
         saveBtn.addActionListener(e -> {
             try {
