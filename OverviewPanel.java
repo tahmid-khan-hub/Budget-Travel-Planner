@@ -46,9 +46,9 @@ public class OverviewPanel extends JPanel {
             }
         }
 
-        totalEstimatedLabel.setText(String.format("Total Estimated Cost: $%.2f", estimatedSum));
+        totalEstimatedLabel.setText(String.format("Total Estimated Cost: ৳%.2f", estimatedSum));
         double actualBudget = (BudgetPanel.currentBudget != null) ? BudgetPanel.currentBudget.getTotal() : 0;
-        totalBudgetLabel.setText(String.format("Total Actual Budget: $%.2f", actualBudget));
+        totalBudgetLabel.setText(String.format("Total Actual Budget: ৳%.2f", actualBudget));
     }
 
     private void styleButton(JButton btn) {
