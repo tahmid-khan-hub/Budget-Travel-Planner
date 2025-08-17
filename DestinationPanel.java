@@ -47,7 +47,7 @@ public class DestinationPanel extends JPanel {
 
                 Destination dest = new Destination(name, date, cost);
                 destinations.add(dest);
-                listModel.addElement(name + " (" + date + ") - $" + cost);
+                listModel.addElement(name + " (" + date + ") - ৳" + cost);
 
                 nameField.setText("");
                 dateField.setText("");
